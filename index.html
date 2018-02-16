@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Assignment 3</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <script src="app.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <ul class="navbar-nav">
+    <li class="nav-item active">
+      <a class="nav-link" href="#" style="background-color:#3b5998">Facebook</a>
+    </li>
+  </ul>
+</nav>
+
+<div class="container">
+
+		<div class="form-group">
+		       <h3>Enter Facebook Token </h3>
+		      <input type="text" id="tkn" class="form-control"><br>
+		      <button type="button" id="facebookBtn">Lets Go...!</button>
+
+		      <br><hr><br>      
+
+					<div class="row">
+
+						   <div class="container-fluid col-sm-3 col-md-3">
+								     <nav class="navbar navbar-default">
+									<div class="navbar-header" style="background-color:black;height:100%;width:100%;">
+									 <a class="navbar-brand" style="color:white;" href="#">Sections</a>
+									</div>
+								  
+									    <ul class="nav navbar-nav">
+									      <li><a href="#basicdetails" id="linkBasicDetails">Basics Details</a></li>
+									      <li><a href="#aboutDiv" id="linkAbout">About</a></li>
+                                                                            
+									      <li><a href="#profileDiv" id="linkProfile">Profile Picture</a></li>
+									      <li><a href="#eduDiv" id="linkEdu">Education</a></li>
+									      <li><a href="#workDiv" id="linkWork">Work</a></li>
+									      <li><a href="#postsDiv" id="linkPosts">Posts</a></li>
+									    </ul>
+								    </nav>   
+
+						   </div>
+
+
+
+ <div class="loader">Loading...!!!</div>
+
+
+					   
+								    <div id="basicdetails" class="col-sm-3 col-md-6 main" style="background-color:grey;hight:100%;">
+
+											<h2>Basics Details</h2>	               
+
+											  <table class="table">
+											      <tr>
+												<th>Name</th>
+												<td><span id="name"></span></td>
+											      </tr>
+											    
+											      <tr>
+												<th>Birthday</th>
+												<td><span id="birthday"></span></td>
+											      </tr>
+											     
+											      <tr>
+												<th>Inrested In</th>
+												<td><span id="interIn"></span></td>
+											      </tr>
+											      <tr>
+												<th>Languages</th>
+												<td><span id="lang"></span></td>
+											      </tr>
+                                                                                
+											      <tr>
+												<th>Gender</th>
+												<td><span id="gen"></span></td>
+											      </tr>											 
+
+											  </table>
+
+								    </div>
+
+
+								    <div id="aboutDiv" class="col-sm-3 col-md-6 main" style="background-color:grey;hight:100%;">
+
+											<h2>About</h2>	               
+
+											  <table class="table">
+											      <tr>
+												<th>Quote</th>
+												<td><span id="quotes"></span></td>
+											      </tr>
+				
+											      <tr>
+												<th>Mail</th>
+												<td><span id="email"></span></td>
+											      </tr>
+											 
+											  </table>
+
+								    </div>		
+
+
+								   
+
+								    <div id="profileDiv" class="col-sm-3 col-md-6 main" style="background-color:grey;hight:100%;">
+
+									  <h2>Profile Picture</h2>	       
+
+		                                                          <img class="img-responsive img-height" id="profilePhoto" style="margin: 0 auto">
+
+
+								   </div>		
+
+
+  								   <div id="eduDiv" class="col-sm-3 col-md-6 main" style="background-color:grey;hight:100%;">
+
+											<h2>Education Information</h2>	               
+
+											 School :  <b><div id="eduMainSchool"></div></b>
+                                                                                         College :  <b><div id="eduMainCollege"></div></b>
+
+								    </div>	
+
+	
+  								   <div id="workDiv" class="col-sm-3 col-md-6 main" style="background-color:grey;hight:100%;">
+
+											<h2>Work Information</h2>	               
+
+											  <table class="table">
+											      <tr>
+												<th><b>Comapany Name</b></th>
+												<td><span id="companyName"></span></td>
+											     </tr>
+				
+											      <tr>
+												<th>Position</th>
+												<td><span id="positionName"></span></td>
+											      </tr>
+											 
+
+											  </table>
+
+								    </div>	
+
+
+								    <div id="postsDiv" class="col-sm-3 col-md-6 main" style="background-color:grey;hight:100%;width:100%;">
+										<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+										  <ul class="navbar-nav">
+										    <li class="nav-item active">
+										      <a class="nav-link" href="#" style="background-color:#3b5998">Facebook Post Retrieval</a>
+										    </li>
+										  </ul>
+										</nav>
+
+                                                                        <div id="postMain"></div>
+								    </div>	
+
+
+
+
+					  </div>
+
+
+
+
+		</div>
+
+
+</div>
+  
+  
+ 
+
+</body>
+</html>
+
